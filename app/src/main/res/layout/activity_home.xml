@@ -4,13 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/t_background"
     tools:context=".Home">
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:layout_width="144dp"
         android:layout_height="wrap_content"
-        android:layout_x="140dp"
-        android:layout_y="341dp"
-        android:text="Start test" />
+        android:layout_x="127dp"
+        android:layout_y="402dp"
+        android:gravity="center"
+
+        android:backgroundTint="#EF9565"
+        android:textColor="#010327"
+        android:text="Start test"
+
+         />
 </AbsoluteLayout>

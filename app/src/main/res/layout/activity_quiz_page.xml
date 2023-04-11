@@ -3,12 +3,17 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/uize_background"
     android:padding="16dp">
 
     <TextView
         android:id="@+id/question_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:background="@drawable/card"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:textAppearance="@android:style/TextAppearance.Large"
         android:layout_gravity="center_horizontal"
         android:text="Question 1 of 5: What is the capital of France?"/>
@@ -17,29 +22,34 @@
         android:id="@+id/answer_radio_group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/card"
         android:layout_marginTop="16dp">
 
         <RadioButton
             android:id="@+id/answer_radio_button_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+             android:textColor="@color/black"
             android:text="New York"/>
 
         <RadioButton
             android:id="@+id/answer_radio_button_2"
             android:layout_width="wrap_content"
+             android:textColor="@color/black"
             android:layout_height="wrap_content"
             android:text="London"/>
 
         <RadioButton
             android:id="@+id/answer_radio_button_3"
             android:layout_width="wrap_content"
+             android:textColor="@color/black"
             android:layout_height="wrap_content"
             android:text="Paris"/>
 
         <RadioButton
             android:id="@+id/answer_radio_button_4"
             android:layout_width="wrap_content"
+             android:textColor="@color/black"
             android:layout_height="wrap_content"
             android:text="Tokyo"/>
     </RadioGroup>
@@ -49,6 +59,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Next"
+        android:backgroundTint="#EF9565"
+        android:textColor="#010327"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="16dp"
         android:visibility="visible"/>
@@ -57,18 +69,29 @@
         android:id="@+id/submit_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Submit"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="16dp"/>
-
-    <TextView
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#EF9565"
+        android:text="Submit"
+        android:textColor="#010327" />
+<!--He khalche mi comment kele hote pan java file madhe error yeto ahe -->
+        <TextView
         android:id="@+id/result_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="@android:style/TextAppearance.Large"
         android:text="Your score is:"
+            android:textColor="@color/white"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
         android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/ContactButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="View Doctor" />
 
 </LinearLayout>

@@ -1,6 +1,9 @@
 package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,9 +22,11 @@ public class QuizPage extends AppCompatActivity {
     private Button nextButton;
     private Button submitButton;
     private TextView resultTextView;
+    private Button ContactButton;
 
     private int currentQuestion = 1;
     private int score = 0;
+    Intent intent;
 
     private String[] questions = {
             "What is the capital of France?",
@@ -41,6 +46,7 @@ public class QuizPage extends AppCompatActivity {
 
     private int[] correctAnswers = {2, 1, 3, 2, 0};
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,6 +61,7 @@ public class QuizPage extends AppCompatActivity {
         nextButton = findViewById(R.id.next_button);
         submitButton = findViewById(R.id.submit_button);
         resultTextView = findViewById(R.id.result_text_view);
+        ContactButton=(Button) findViewById(R.id.ContactButton) ;
 
         // Start with the first question
         showQuestion(currentQuestion);
@@ -141,5 +148,13 @@ public class QuizPage extends AppCompatActivity {
         // Show the Submit button as disabled
         submitButton.setVisibility(View.VISIBLE);
         submitButton.setEnabled(false);
+
+        ContactButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(QuizPage.this, Contact.class);
+                startActivity(intent);
+            }
+        });
     }
 }
