@@ -16,7 +16,7 @@
         android:paddingRight="10dp"
         android:textAppearance="@android:style/TextAppearance.Large"
         android:layout_gravity="center_horizontal"
-        android:text="Question 1 of 5: What is the capital of France?"/>
+        android:text="Question 1 of 5: Have you experienced any significant changes in your mood or behavior lately?"/>
 
     <RadioGroup
         android:id="@+id/answer_radio_group"
@@ -30,28 +30,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
              android:textColor="@color/black"
-            android:text="New York"/>
+            android:text="Yes"/>
 
         <RadioButton
             android:id="@+id/answer_radio_button_2"
             android:layout_width="wrap_content"
              android:textColor="@color/black"
             android:layout_height="wrap_content"
-            android:text="London"/>
+            android:text="No"/>
 
         <RadioButton
             android:id="@+id/answer_radio_button_3"
             android:layout_width="wrap_content"
              android:textColor="@color/black"
             android:layout_height="wrap_content"
-            android:text="Paris"/>
+            android:text="Sometime"/>
 
         <RadioButton
             android:id="@+id/answer_radio_button_4"
             android:layout_width="wrap_content"
              android:textColor="@color/black"
             android:layout_height="wrap_content"
-            android:text="Tokyo"/>
+            android:text="Lightly"/>
     </RadioGroup>
 
     <Button

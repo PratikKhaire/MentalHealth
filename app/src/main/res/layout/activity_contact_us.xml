@@ -6,13 +6,84 @@
     android:layout_height="match_parent"
     tools:context=".ContactUs">
 
-    <TextView
-        android:id="@+id/textView3"
+
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="www.zoom.com"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/top_background" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="290dp"
+        android:layout_height="33dp"
+        android:background="@drawable/card2"
+        android:paddingLeft="30dp"
+        android:paddingRight="10dp"
+        android:text="Copyright ©[Dev Studio's]All rights reserved"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.945" />
+
+    <ImageView
+        android:layout_width="502dp"
+        android:layout_height="189dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.389"
+        app:srcCompat="@drawable/profile1" />
+
+    <TextView
+        android:layout_width="347dp"
+        android:layout_height="57dp"
+        android:background="@drawable/card2"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:text="Join Zoom Meeting
+https://us05web.zoom.us/j/87234502353?pwd=Rm5XSkprWlA1WHpKb0NGMWdZUmxSQT09"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <TextView
+        android:layout_width="290dp"
+        android:layout_height="33dp"
+        android:background="@drawable/card2"
+        android:paddingLeft="30dp"
+        android:paddingRight="10dp"
+        android:text="Your meeting has been schedule"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.187" />
+
+    <TextView
+        android:layout_width="209dp"
+        android:layout_height="32dp"
+        android:background="@drawable/card2"
+        android:paddingLeft="50dp"
+        android:text="Dr Sandip Sisode"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="565dp" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
